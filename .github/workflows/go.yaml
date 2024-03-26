@@ -9,6 +9,7 @@ on:
       - ".github/workflows/go.yaml"
       - "install_tooling.sh"
   workflow_call:
+  workflow_dispatch:
 
 env:
   REGISTRY: ghcr.io
@@ -25,8 +26,6 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - tag: 1.21-alpine
-          - tag: 1.21
           - tag: 1.22-alpine
           - tag: 1.22
     steps:
