@@ -26,8 +26,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - tag: 1.22-alpine
-          - tag: 1.22
+          - tag: 1.23-alpine
+          - tag: 1.23
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-qemu-action@v1
